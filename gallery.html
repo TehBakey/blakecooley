@@ -1,0 +1,105 @@
+<!DOCTYPE=html>
+
+<html>
+
+<head> 
+  <title>Blake Cooley - Gallery</title> 
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+  <style>
+  ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+}
+
+li {
+  float: left;
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+/* Change the link color to #111 (black) on hover */
+li a:hover {
+  background-color: #111;
+}
+.mySlides {display:none;}
+</style>
+</head>
+
+<body>
+<ul>
+  <li><a class="active" href="index.html">Home</a></li>
+  <li><a href="resume.html">Resume</a></li>
+  <li><a href="gallery.html">Gallery</a></li>
+  <li><a href="#contact">Contact</a></li>
+  <li><a href="#about">About</a></li>
+</ul>
+
+<div class="w3-content w3-display-container">
+
+<div class="w3-content w3-display-container mySlides">
+  <img src="images/gallery/nerps.png" style="width:100%">
+  <div class="w3-display-topright w3-large w3-container w3-padding-16 w3-black w3-opacity-max">
+    Shadowrun inspired mock-Ad 1
+  </div>
+</div>
+
+  <div class="w3-content w3-display-container mySlides">
+  <img src="images/gallery/cyberdeskadholo.png" style="width:100%">
+  <div class="w3-display-topright w3-large w3-container w3-padding-16 w3-black w3-opacity-max">
+    Shadowrun inspired mock-Ad 2
+  </div>
+</div>
+
+  <div class="w3-content w3-display-container mySlides">
+  <img src="images/gallery/classy_zan.jpg" style="width:100%">
+  <div class="w3-display-topright w3-large w3-container w3-padding-16 w3-black w3-opacity-max">
+    In-game Photography: Second Life 1
+  </div>
+</div>
+
+  <div class="w3-content w3-display-container mySlides">
+  <img src="images/gallery/cyberpunkcity.png" style="width:100%">
+  <div class="w3-display-topright w3-large w3-container w3-padding-16 w3-black w3-opacity-max">
+    In-game Photography: Second Life 2
+  </div>
+</div>
+
+  <button class="w3-button w3-display-left w3-black w3-opacity-max" onclick="plusDivs(-1)">&#10094;</button>
+<button class="w3-button w3-display-right w3-black w3-opacity-max" onclick="plusDivs(1)">&#10095;</button>
+</div>
+
+
+
+<script>
+var slideIndex = 1;
+showDivs(slideIndex);
+
+function plusDivs(n) {
+  showDivs(slideIndex += n);
+}
+
+function showDivs(n) {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  if (n > x.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = x.length}
+  for (i = 0; i < x.length; i++) {
+     x[i].style.display = "none";  
+  }
+  x[slideIndex-1].style.display = "block";  
+}
+</script>
+
+</body>
+
+</html>
