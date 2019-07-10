@@ -5,19 +5,33 @@
 <head> 
   <title>Blake A. Cooley's Website</title> 
   <style>
-  ul {
-  list-style-type: none;
+  	#logo{display: block;
+ margin: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+  	
+  body {
+  	background-image: url("images/tronbackground.jpg");
+  	background-repeat: no-repeat;
+  	background-size: 100% 100%;
   margin: 0;
   padding: 0;
   overflow: hidden;
   background-color: #333;
 }
-
+ul {
+list-style-type: none;
+}
 li {
   float: left;
 }
 
 li a {
+	background-color: #333;
   display: block;
   color: white;
   text-align: center;
@@ -33,12 +47,15 @@ li a:hover {
 </head>
 
 <body>
-<ul>
-  <li><a class="active" href="index.html">Home</a></li>
-  <li><a href="resume.html">Resume</a></li>
-  <li><a href="#contact">Contact</a></li>
-  <li><a href="#about">About</a></li>
-</ul>
+    <ul>
+      <li><a class="active" href="index.html">Home</a></li>
+      <li><a href="resume.html">Resume</a></li>
+      <li><a href="#contact">Contact</a></li>
+      <li><a href="#about">About</a></li>
+    </ul>
+  <img id="logo" src="images/logo.png">
+
+    
 </body>
 
 </html>
