@@ -1,0 +1,16 @@
+<?xml version="1.0"?>
+<!DOCTYPE squad SYSTEM "squad.dtd">
+<?xml-stylesheet href="squad.xsl" type="text/xsl"?>
+<squad nick="SNC">
+	<name>Solo Nobre Concern</name>
+	<email>N/A</email>
+	<web>N/A</web>
+	<picture>logo_paa.paa</picture>
+	<title></title>
+  <member id="76561197963192716" nick="Bakey">
+		<name>N/A</name>
+		<email>N/A</email>
+		<icq>N/A</icq>
+		<remark>A big nerd</remark>
+</member>
+</squad>
